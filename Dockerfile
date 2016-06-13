@@ -10,5 +10,8 @@ RUN \
   rm -rf /var/lib/apt/lists/*
   
   COPY ./entrypoint.sh /entrypoint.sh
+  COPY ./update-exim4.conf.conf /etc/exim4/update-exim4.conf.conf
+  
+  RUN update-exim4.conf
   
   ENTRYPOINT [ "/entrypoint.sh" ] 
