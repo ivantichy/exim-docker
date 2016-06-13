@@ -14,4 +14,6 @@ RUN \
   
   RUN update-exim4.conf
   
+  EXPOSE 25
+  
   ENTRYPOINT [ "/entrypoint.sh" ] 

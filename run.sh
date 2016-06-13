@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -it ivantichy/exim
+docker run -d -p 25:25 ivantichy/exim
